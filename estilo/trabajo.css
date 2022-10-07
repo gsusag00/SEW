@@ -1,0 +1,41 @@
+/*
+    Jesús Alonso García - UO271723
+    Descripcion de los estilos
+*/
+
+header {
+    background-color: gray;
+}
+
+nav {
+    background-color: white;
+}
+
+section article {
+    background-color: magenta;
+}
+
+
+section {
+    background-color: aquamarine;
+}
+
+article {
+    background-color: greenyellow;
+}
+
+aside {
+    background-color: burlywood;
+}
+
+footer {
+    background-color: darkorchid;
+}
+
+nav {
+    background-color: gold;
+}
+
+main {
+    background: pink;
+}
