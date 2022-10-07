@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 
 <html lang="es">
-    <head>
-        <!-- Metadatos de los documentos HTML5 -->
-        <meta name="author" content="Jesús Alonso Gárcia">
-        <meta name="description" content="Una pagina web sobre Node.js">
-        <meta name="keywords" content="Node, node.js, Javascript, npm, webdev">
-        <meta charset="utf-8">
-        
-        <!-- Definición de la ventana grafica -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Titulo de la página -->
-        <title>Node.js - Opinión</title>
-        <!-- añadir el elemento link de enlace a laa hoja de estilo dentro del <head> del documento html -->
-        <link rel="stylesheet" type="text/css" href="estilo/plantilla.css">
-    </head>
-    <body>
+
+<head>
+    <!-- Metadatos de los documentos HTML5 -->
+    <meta name="author" content="Jesús Alonso Gárcia">
+    <meta name="description" content="Una pagina web sobre Node.js">
+    <meta name="keywords" content="Node, node.js, Javascript, npm, webdev">
+    <meta charset="utf-8">
+
+    <!-- Definición de la ventana grafica -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo de la página -->
+    <title>Node.js - Opinión</title>
+    <!-- añadir el elemento link de enlace a laa hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/plantilla.css">
+</head>
+
+<body>
+    <header>
         <h1> Node.js</h1>
         <nav>
             <ul>
@@ -25,11 +28,18 @@
                 <li> <a accesskey="o" href="formulario.html" tabindex="4"> Formulario </a></li>
             </ul>
         </nav>
-        <p>Muchas gracias por visitar nuestro sitio web, a continuación te pediria que me rellenases el siguiente formulario para ver tu opinión para tenerla en cuenta y así poder mejorar el sitio web para que mas personas puedan tener una mejor experiencia.</p>
+    </header>
+    <main>
+
+        <p>Muchas gracias por visitar nuestro sitio web, a continuación te pediria que me rellenases el siguiente
+            formulario para ver tu opinión para tenerla en cuenta y así poder mejorar el sitio web para que mas personas
+            puedan tener una mejor experiencia.</p>
         <form>
             <p><label for="nombre">Nombre: <input id="nombre" type="text" placeholder="Escribe tu nombre"></label></p>
-            <p><label for="apellidos">Apellidos: <input id="apellidos" type="text" placeholder="Escribe tu apellido"></label></p>
-            <p><label for="email">Correo electronico: <input id="email" type="email" placeholder="ejemplo@ejemplomail.com"></label></p>
+            <p><label for="apellidos">Apellidos: <input id="apellidos" type="text"
+                        placeholder="Escribe tu apellido"></label></p>
+            <p><label for="email">Correo electronico: <input id="email" type="email"
+                        placeholder="ejemplo@ejemplomail.com"></label></p>
             <fieldset>
                 <legend>Satisfacción</legend>
                 <p><label> <input type="radio" name="satisfaction"> Insatisfecho </label></p>
@@ -39,8 +49,12 @@
                 <p><button>Enviar formulario</button></p>
             </fieldset>
         </form>
-        <footer>
-            
-        </footer>
-    </body>
+    </main>
+    <footer>
+        <p> Hecho por Jesús Alonso García</p>
+        <address>Correo: uo271723@uniovi.es</address>
+    </footer>
+
+</body>
+
 </html>
