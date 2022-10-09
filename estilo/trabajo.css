@@ -1,41 +1,66 @@
 /*
     Jesús Alonso García - UO271723
-    Descripcion de los estilos
+    Hoja de estilos hecha para el ejercicio 12 tan solo cambia el color de fondo de los elementos estructurales
 */
 
+/* 
+    Especifidad 0 0 1
+*/
 header {
     background-color: gray;
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 nav {
     background-color: white;
 }
 
+/* 
+    Especifidad 0 0 2
+*/
 section article {
     background-color: magenta;
 }
 
-
+/* 
+    Especifidad 0 0 1
+*/
 section {
     background-color: aquamarine;
 }
-
+/* 
+    Especifidad 0 0 1
+*/
 article {
     background-color: greenyellow;
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 aside {
     background-color: burlywood;
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 footer {
     background-color: darkorchid;
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 nav {
     background-color: gold;
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 main {
     background: pink;
 }
