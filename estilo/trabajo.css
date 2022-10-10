@@ -10,12 +10,7 @@ header {
     background-color: gray;
 }
 
-/* 
-    Especifidad 0 0 1
-*/
-nav {
-    background-color: white;
-}
+
 
 /* 
     Especifidad 0 0 2
@@ -56,6 +51,9 @@ footer {
 */
 nav {
     background-color: gold;
+    margin: 1em;
+    padding: 1em;
+    border: 1em solid black;
 }
 
 /* 
