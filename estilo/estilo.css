@@ -1,6 +1,10 @@
 /*
     Jesús Alonso García - UO271723
     Descripcion de los estilos
+     - Tipos de fuentes
+     - Propiedades de colores de elementos
+     - Propiedades de aspecto de los enlaces
+     - Propiedaaades de listas y tablas.
 */
 
 /*Especificidad: 001*/
@@ -10,16 +14,63 @@ body {
   background-color: #fff;
 }
 /*Especificidad: 001*/
-h1 {
+header {
   color: #fff;
   background-color: #ff5733;
   text-transform: uppercase;
-  padding: 2em;
+  padding: 2em 0em 2em;
   text-align: center;
 }
 
-/*Especifidad: 001*/
-p {
+section {
+  padding: 1em;
+}
+
+ul a {
+  display: block;
   color:black;
-  background-color: white;
+  text-decoration: none;
+}
+
+h3 > ul {
+  list-style-type: disc;
+}
+
+p {
+  padding: 0em 2em;
+}
+
+li p {
+  padding-left: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  border: 1px solid black;
+  margin: auto;
+}
+
+th {
+  background-color: aquamarine;
+}
+
+caption {
+  font-weight: bold;
+  padding-bottom: 1em;
+  font-size: 1.25em;
+}
+
+td {
+  background-color: rgb(204, 255, 238);
+}
+
+li {
+  padding: 1em;
 }
