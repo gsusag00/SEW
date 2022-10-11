@@ -37,12 +37,18 @@ table {
 
 th {
   color:inherit;
+  background-color: inherit;
+  /*
   background-color: aquamarine;
+  */
 }
 
 td {
   color:inherit;
+  background-color: inherit ;
+  /*
   background-color: rgb(204, 255, 238);
+  */
 }
 
 caption {
