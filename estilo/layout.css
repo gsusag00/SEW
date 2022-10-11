@@ -8,7 +8,7 @@ body {
     grid-template-areas: "header header header"
                         "sidebar content content"
                         "sidebar content content"
-                        "sidebar footer footer";
+                        "footer footer footer";
 }
 
 @media (max-width:600px) {
@@ -19,15 +19,18 @@ body {
                             "content"
                             "footer";
     }
+
+    nav ul {
+        list-style: none;
+        display: flexbox;
+        flex-direction: row;
+        flex: 1 0 0 0;
+        justify-content: flex-end;
+    }
 }
 
 header {
     grid-area: header;
-}
-
-aside {
-    grid-area: aside;
-    align-self: baseline;
 }
 
 nav {
@@ -35,6 +38,11 @@ nav {
     display: flexbox;
     flex-direction: column;
     justify-content: space-between;
+}
+
+nav ul {
+    display: flexbox;
+    flex-direction: column;
 }
 
 section {

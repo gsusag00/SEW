@@ -26,21 +26,21 @@ section {
   padding: 1em;
 }
 
-h3 > ul {
-  list-style-type: disc;
-}
-
 p {
   padding: 0em 2em;
 }
 
 table {
   border: 1px solid black;
-  margin: auto;
+  width: 100%;
 }
 
 th {
   background-color: aquamarine;
+}
+
+td {
+  background-color: rgb(204, 255, 238);
 }
 
 caption {
@@ -49,8 +49,8 @@ caption {
   font-size: 1.25em;
 }
 
-td {
-  background-color: rgb(204, 255, 238);
+h3 > ul {
+  list-style-type: disc;
 }
 
 ul {
@@ -58,15 +58,9 @@ ul {
 }
 
 nav ul {
-  display: flexbox;
-  flex-direction: column;
   margin: 0em;
   padding: 0em;
   background-color: rgb(195, 195, 195);
-}
-
-ul a {
-  text-decoration: none;
 }
 
 nav li {
@@ -74,13 +68,84 @@ nav li {
   border: 1px solid black;
 }
 
-li a {
+ul a {
+  text-decoration: none;
+}
+
+a {
+  color:black;
+}
+
+footer a {
+  color: white;
+}
+
+a:visited {
+  color: black;
+}
+
+footer a:visited {
+  color:white;
+}
+
+p > a:hover {
+  font-weight: bold;
+}
+
+li > a {
   display: block;
-  padding: 1em 1em;
+  padding: 25% 1em;
   color: black;
   text-decoration: none;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+picture > p {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  li > a {
+    padding: 0em;
+  }
 }
 
 li a:hover {
   text-decoration: underline;
+}
+
+footer {
+  background: black;
+}
+
+footer > p,address {
+  text-align: center;
+  color: white;
+  padding-bottom: 1em;
+}
+
+form {
+  border: 1px solid black;
+}
+
+fieldset {
+  background-color: rgb(245, 245, 245);
+  margin: 2em;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  margin-top: 0.5em;
+  height: 2em;
 }
