@@ -11,12 +11,26 @@ body {
                         "sidebar footer footer";
 }
 
+@media (max-width:600px) {
+    body {
+        display:grid;
+        grid-template-areas: "header"
+                            "sidebar"
+                            "content"
+                            "footer";
+    }
+}
+
 header {
     grid-area: header;
 }
 
+aside {
+    grid-area: aside;
+    align-self: baseline;
+}
+
 nav {
-    height:100%;
     grid-area: sidebar;
     display: flexbox;
     flex-direction: column;
@@ -25,6 +39,10 @@ nav {
 
 section {
     grid-area: content;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 footer {
