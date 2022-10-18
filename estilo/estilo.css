@@ -45,7 +45,7 @@ p {
     Especifidad 0 0 1
 */
 table {
-  border: 1px solid black;
+  border: 0.0625em solid black;
   width: 100%;
 }
 
@@ -110,7 +110,7 @@ nav ul {
 */
 nav li {
   padding: 1em 1em;
-  border: 1px solid black;
+  border: 0.0625em solid black;
 }
 
 /*
@@ -229,7 +229,7 @@ address {
   Especifidad 0 0 1
 */
 form {
-  border: 1px solid black;
+  border: 0.0625 solid black;
 }
 
 /*
