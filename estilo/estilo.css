@@ -1,19 +1,24 @@
 /*
     Jesús Alonso García - UO271723
     Descripcion de los estilos
-     - Tipos de fuentes
-     - Propiedades de colores de elementos
-     - Propiedades de aspecto de los enlaces
-     - Propiedaaades de listas y tablas.
+      - Tipos de fuentes
+      - Propiedades de colores de elementos
+      - Propiedades de aspecto de los enlaces
+      - Propiedades de listas y tablas.
 */
 
-/*Especificidad: 001*/
+/*
+  Especificidad: 001
+*/
 body {
   font-family: Tahoma, sans-serif;
   color: black;
   background-color: #fff;
 }
-/*Especificidad: 001*/
+
+/*
+  Especificidad: 001
+*/
 header {
   color: #fff;
   background-color: #ff5733;
@@ -22,90 +27,142 @@ header {
   text-align: center;
 }
 
+/* 
+  Especifidad 0 0 1
+*/
 section {
   padding: 1em;
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 p {
   padding: 0em 2em;
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 table {
   border: 1px solid black;
   width: 100%;
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 th {
-  color:inherit;
+  color: inherit;
   background-color: inherit;
   /*
   background-color: aquamarine;
   */
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 td {
-  color:inherit;
-  background-color: inherit ;
+  color: inherit;
+  background-color: inherit;
   /*
   background-color: rgb(204, 255, 238);
   */
 }
 
+/* 
+    Especifidad 0 0 1
+*/
 caption {
   font-weight: bold;
   padding-bottom: 1em;
   font-size: 1.25em;
 }
 
-h3 > ul {
+/* 
+    Especifidad 0 0 2
+*/
+h3>ul {
   list-style-type: disc;
 }
 
+
+/*
+  Especifidad 0 0 1
+*/
 ul {
   list-style-type: none;
 }
 
+/*
+  Especifidad 0 0 2
+*/
 nav ul {
   margin: 0em;
   padding: 0em;
-  color:inherit;
+  color: inherit;
   background-color: white;
 }
 
+/*
+  Especifidad 0 0 2
+*/
 nav li {
   padding: 1em 1em;
   border: 1px solid black;
 }
 
+/*
+  Especifidad 0 0 2
+*/
 ul a {
   text-decoration: none;
 }
 
+/*
+  Especifidad 0 0 1
+*/
 a {
-  color:black;
+  color: black;
   background-color: inherit;
 }
 
+/*
+  Especifidad 0 0 2
+*/
 footer a {
   color: white;
   background-color: inherit;
 }
 
+/*
+  Especifidad 0 1 1
+*/
 a:visited {
   color: black;
   background-color: inherit;
 }
 
+/*
+  Especifidad 0 1 2
+*/
 footer a:visited {
-  color:white;
+  color: white;
   background-color: inherit;
 }
 
-p > a:hover {
+/*
+  Especifidad 0 1 2
+*/
+p>a:hover {
   font-weight: bold;
 }
 
-li > a {
+/*
+  Especifidad 0 0 2
+*/
+li>a {
   display: block;
   padding: 25% 1em;
   color: black;
@@ -114,53 +171,89 @@ li > a {
   text-align: center;
 }
 
-img, video, audio {
+/*
+  Especifidad 0 0 1 para todos
+*/
+img,
+video,
+audio {
   display: block;
   margin: auto;
 }
 
-picture + p {
+/*
+  Especifidad 0 0 2
+*/
+picture+p {
   text-align: center;
 }
 
 @media (max-width: 600px) {
-  li > a {
+
+  /*
+    Especifidad 0 0 2
+  */
+  li>a {
     padding: 0em;
   }
 }
 
+/*
+  Especifidad 0 1 2
+*/
 li a:hover {
   text-decoration: underline;
 }
 
+/*
+  Especifidad 0 0 1
+*/
 footer {
   background: black;
   color: inherit;
 }
 
-footer > p,address {
+/*
+  Especifidad 0 0 2 footer > p
+  Especifidad 0 0 1 address
+*/
+footer>p,
+address {
   text-align: center;
   color: white;
   background-color: inherit;
   padding-bottom: 1em;
 }
 
+/*
+  Especifidad 0 0 1
+*/
 form {
   border: 1px solid black;
 }
 
+/*
+  Especifidad 0 0 1
+*/
 fieldset {
-  color:inherit;
+  color: inherit;
   margin: 2em;
 }
 
+/*
+  Especifidad 0 0 1
+*/
 textarea {
   resize: vertical;
   width: 100%;
   cursor: pointer;
 }
 
-input[type="text"], input[type="email"] {
+/*
+  Especifidad 0 1 1
+*/
+input[type="text"],
+input[type="email"] {
   width: 100%;
   margin-top: 0.5em;
   height: 2em;

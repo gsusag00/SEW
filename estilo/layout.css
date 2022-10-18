@@ -2,23 +2,34 @@
     Jesús Alonso García - UO271723  
     Hoja de estilos hecha para el ejercicio 15, contiene el layout de la página web.
 */
-
+/*
+    Especifidad 0 0 1
+*/
 body {
     display: grid;
-    grid-template-areas: "header header header"
-                        "sidebar content content"
-                        "sidebar content content"
-                        "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "sidebar content content"
+        "footer footer footer";
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
+
+    /*
+        Especifidad 0 0 1
+    */
     body {
-        grid-template-areas: "header"
-                            "sidebar"
-                            "content"
-                            "footer";
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "footer";
     }
 
+    /*
+        Especifidad 0 0 2
+    */
     nav ul {
         display: flex;
         flex-direction: column;
@@ -26,10 +37,16 @@ body {
     }
 }
 
+/*
+    Especifidad 0 0 1
+*/
 header {
     grid-area: header;
 }
 
+/*
+    Especifidad 0 0 1
+*/
 nav {
     grid-area: sidebar;
     display: flex;
@@ -37,6 +54,9 @@ nav {
     justify-content: space-between;
 }
 
+/*
+  Especifidad 0 0 1
+*/
 footer {
     grid-area: footer;
 }
