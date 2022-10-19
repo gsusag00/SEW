@@ -34,13 +34,6 @@ section {
   padding: 1em;
 }
 
-/* 
-    Especifidad 0 0 1
-*/
-p {
-  padding: 0em 2em;
-}
-
 /*
   Estilos de tablas
 */
@@ -79,13 +72,6 @@ ul {
   padding: 0em;
 }
 
-/* 
-    Especifidad 0 0 2
-*/
-h3>ul {
-  list-style-type: disc;
-}
-
 
 /*
   Especifidad 0 0 2
@@ -103,7 +89,6 @@ nav>ul {
   Especifidad 0 0 1
 */
 li {
-  display: inline-block;
   padding: 1em 1em;
 }
 
@@ -112,34 +97,18 @@ Estilo de elementos anchor
 */
 
 /*
-Especifidad 0 0 2
+Especifidad 0 0 1
 */
 a {
   text-decoration: none;
-}  
-
-/*
-  Especifidad 0 0 1
-*/
-a {
   color: black;
-}
-
-
-/*
-Especifidad 0 0 2
-*/
-footer a {
-  color: white;
 }
 
 /*
   Especifidad 0 0 2
 */
-li>a {
-  display: block;
+li>a, footer a {
   color: white;
-  text-align: center;
 }
 
 /*
@@ -161,16 +130,9 @@ footer a:visited, nav a:visited {
 }
 
 /*
-Especifidad 0 1 2
-*/
-p>a:hover {
-  font-weight: bold;
-}
-
-/*
   Especifidad 0 1 2
 */
-li a:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -178,20 +140,16 @@ li a:hover {
   Estilo de elementos multimedia
 */
 
+/*
+  Especifidad 0 0 1
+*/
 aside {
   display:flex;
   justify-content: center;
 }
 
 /*
-  Especifidad 0 0 2
-*/
-picture+p {
-  text-align: center;
-}
-
-/*
-  Estilo para footers
+  Estilo para footer
 */
 
 /*
@@ -206,8 +164,7 @@ footer {
   Especifidad 0 0 2 footer > p
   Especifidad 0 0 1 address
 */
-footer>p,
-address {
+footer>p,address {
   text-align: center;
   padding-bottom: 1em;
 }
@@ -236,15 +193,4 @@ fieldset {
 textarea {
   resize: vertical;
   width: 100%;
-  cursor: pointer;
-}
-
-/*
-  Especifidad 0 1 1
-*/
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  margin-top: 0.5em;
-  height: 2em;
 }
