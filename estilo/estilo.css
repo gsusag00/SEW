@@ -45,12 +45,16 @@ p {
   Estilos de tablas
 */
 
+table {
+  width:100%;
+}
+
 /* 
     Especifidad 0 0 1
 */
-table {
+table, th, td {
   border: 0.0625em solid black;
-  width: 100%;
+  border-collapse: collapse;
 }
 
 /* 
