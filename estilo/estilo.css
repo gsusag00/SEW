@@ -41,6 +41,10 @@ p {
   padding: 0em 2em;
 }
 
+/*
+  Estilos de tablas
+*/
+
 /* 
     Especifidad 0 0 1
 */
@@ -52,32 +56,23 @@ table {
 /* 
     Especifidad 0 0 1
 */
-th {
-  color: inherit;
-  background-color: inherit;
-  /*
-  background-color: aquamarine;
-  */
-}
-
-/* 
-    Especifidad 0 0 1
-*/
-td {
-  color: inherit;
-  background-color: inherit;
-  /*
-  background-color: rgb(204, 255, 238);
-  */
-}
-
-/* 
-    Especifidad 0 0 1
-*/
 caption {
   font-weight: bold;
   padding-bottom: 1em;
   font-size: 1.25em;
+}
+
+/*
+  Estilo de listas no ordenadas
+*/
+
+/*
+  Especifidad 0 0 1
+*/
+ul {
+  list-style-type: none;
+  margin: 0em;
+  padding: 0em;
 }
 
 /* 
@@ -89,74 +84,49 @@ h3>ul {
 
 
 /*
+  Especifidad 0 0 2
+*/
+nav>ul {
+  background-color: black;
+  color:white;
+}
+
+/*
+  Estilo de items de listas
+*/
+
+/*
   Especifidad 0 0 1
 */
-ul {
-  list-style-type: none;
-}
-
-/*
-  Especifidad 0 0 2
-*/
-nav ul {
-  margin: 0em;
-  padding: 0em;
-  color: inherit;
-  background-color: white;
-}
-
-/*
-  Especifidad 0 0 2
-*/
-nav li {
+li {
+  display: inline-block;
   padding: 1em 1em;
-  border: 0.0625em solid black;
 }
 
 /*
-  Especifidad 0 0 2
+Estilo de elementos anchor
 */
-ul a {
+
+/*
+Especifidad 0 0 2
+*/
+a {
   text-decoration: none;
-}
+}  
 
 /*
   Especifidad 0 0 1
 */
 a {
   color: black;
-  background-color: inherit;
 }
 
+
 /*
-  Especifidad 0 0 2
+Especifidad 0 0 2
 */
 footer a {
   color: white;
-  background-color: inherit;
-}
-
-/*
-  Especifidad 0 1 1
-*/
-a:visited {
-  color: black;
-  background-color: inherit;
-}
-
-/*
-  Especifidad 0 1 2
-*/
-footer a:visited {
-  color: white;
-  background-color: inherit;
-}
-
-/*
-  Especifidad 0 1 2
-*/
-p>a:hover {
-  font-weight: bold;
 }
 
 /*
@@ -164,38 +134,33 @@ p>a:hover {
 */
 li>a {
   display: block;
-  padding: 25% 1em;
+  color: white;
+  text-align: center;
+}
+
+/*
+Estilo de pseudoclases
+*/
+
+/*
+  Especifidad 0 1 1
+*/
+a:visited {
   color: black;
-  background-color: inherit;
-  text-decoration: none;
-  text-align: center;
 }
 
 /*
-  Especifidad 0 0 1 para todos
+Especifidad 0 1 2
 */
-img,
-video,
-audio {
-  display: block;
-  margin: auto;
+footer a:visited, nav a:visited {
+  color: white;
 }
 
 /*
-  Especifidad 0 0 2
+Especifidad 0 1 2
 */
-picture+p {
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-
-  /*
-    Especifidad 0 0 2
-  */
-  li>a {
-    padding: 0em;
-  }
+p>a:hover {
+  font-weight: bold;
 }
 
 /*
@@ -206,11 +171,31 @@ li a:hover {
 }
 
 /*
+  Estilo de elementos multimedia
+*/
+
+aside {
+  display:flex;
+  justify-content: center;
+}
+
+/*
+  Especifidad 0 0 2
+*/
+picture+p {
+  text-align: center;
+}
+
+/*
+  Estilo para footers
+*/
+
+/*
   Especifidad 0 0 1
 */
 footer {
   background: black;
-  color: inherit;
+  color: white;
 }
 
 /*
@@ -220,23 +205,24 @@ footer {
 footer>p,
 address {
   text-align: center;
-  color: white;
-  background-color: inherit;
   padding-bottom: 1em;
 }
+
+/*
+  Estilo para cuestionario
+*/
 
 /*
   Especifidad 0 0 1
 */
 form {
-  border: 0.0625 solid black;
+  border: 0.0625em solid black;
 }
 
 /*
   Especifidad 0 0 1
 */
 fieldset {
-  color: inherit;
   margin: 2em;
 }
 

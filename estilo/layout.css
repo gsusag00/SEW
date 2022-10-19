@@ -9,23 +9,12 @@ body {
     display: grid;
     grid-template-areas:
         "header header header"
-        "sidebar content content"
-        "sidebar content content"
+        "sidebar sidebar sidebar"
+        "content content content"
         "footer footer footer";
 }
 
-@media (max-width: 600px) {
-
-    /*
-        Especifidad 0 0 1
-    */
-    body {
-        grid-template-areas:
-            "header"
-            "sidebar"
-            "content"
-            "footer";
-    }
+@media (max-width: 640px) {
 
     /*
         Especifidad 0 0 2
