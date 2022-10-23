@@ -179,5 +179,5 @@ fieldset {
   Especifidad 0 0 1
 */
 textarea {
-  resize: vertical;
+  resize: both;
 }
