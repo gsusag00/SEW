@@ -14,18 +14,7 @@ body {
         "footer footer footer";
 }
 
-@media (max-width: 640px) {
-    /*
-        Especifidad 0 0 2
-    */
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-}
-
-section{
+section {
     grid-area: content;
 }
 
@@ -51,4 +40,12 @@ nav {
 */
 footer {
     grid-area: footer;
+}
+
+/*
+  Especifidad 0 0 1
+*/
+aside {
+    display: flex;
+    justify-content: center;
 }

@@ -137,18 +137,6 @@ a:hover {
 }
 
 /*
-  Estilo de elementos multimedia
-*/
-
-/*
-  Especifidad 0 0 1
-*/
-aside {
-  display:flex;
-  justify-content: center;
-}
-
-/*
   Estilo para footer
 */
 
